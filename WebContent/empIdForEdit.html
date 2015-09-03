@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+    background-color:green;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;
+    }
+</style>
+</head>
+<body>
+<header>
+<h1>Edit Database</h1>
+</header>
+<section>
+<br>
+<h2>Enter the Employee Id you want to change</h2>
+<form method="POST" action="edit">
+<input type="text" name= "empId" value="" /> <br>
+<input type="radio" name="edit" value="Update" > Update Value
+<br>
+<input type="radio" name="edit" value="Delete">Delete
+<br>
+<input type="submit" value="Submit" />
+</form>
+</section>
+</body>
+</html>

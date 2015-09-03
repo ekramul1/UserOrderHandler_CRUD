@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+id="WebApp_ID" version="3.0">
+<welcome-file-list>
+<welcome-file>index.jsp
+</welcome-file>
+
+</welcome-file-list>
+<servlet>
+   <servlet-name>LOGGING</servlet-name>
+   <jsp-file>/LoginAuth.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>LOGGING</servlet-name>
+   <url-pattern>/login</url-pattern>
+ </servlet-mapping>
+ <servlet>
+   <servlet-name>Log</servlet-name>
+   <jsp-file>/Logindata.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>Log</servlet-name>
+   <url-pattern>/addNew</url-pattern>
+ </servlet-mapping>
+ <servlet>
+   <servlet-name>Display</servlet-name>
+   <servlet-class>user.DisplayServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>Display</servlet-name>
+   <url-pattern>/servingRequest</url-pattern>
+ </servlet-mapping>
+ <servlet>
+   <servlet-name>viewOrder</servlet-name>
+   <jsp-file>/lookThroughOrder.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>viewOrder</servlet-name>
+   <url-pattern>/view</url-pattern>
+ </servlet-mapping>
+ <servlet>
+   <servlet-name>searching</servlet-name>
+   <jsp-file>/search.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>searching</servlet-name>
+   <url-pattern>/searchDetails</url-pattern>
+ </servlet-mapping>
+ <servlet>
+   <servlet-name>make</servlet-name>
+   <jsp-file>/addOrder1.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>make</servlet-name>
+   <url-pattern>/order</url-pattern>
+ </servlet-mapping>
+ <servlet>
+   <servlet-name>EditPop</servlet-name>
+   <jsp-file>/editUser.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>EditPop</servlet-name>
+   <url-pattern>/editPOP</url-pattern>
+ </servlet-mapping>
+ <servlet>
+   <servlet-name>EditData</servlet-name>
+   <jsp-file>/deleteUser.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>EditData</servlet-name>
+   <url-pattern>/edit</url-pattern>
+ </servlet-mapping>
+ </web-app>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+   position: absolute;
+   right: 50px;
+}
+header {
+   font-size:40px;
+   background-color:black;
+   color:white;
+   text-align:center;
+   padding:5px;	
+}
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+section {
+   width:1260px;
+   float:left;
+   padding:10px;
+   }
+
+footer {
+   background-color:orange;
+   color:white;
+   clear:both;
+   text-align:left;
+   padding:5px;	
+}
+</style>
+</head>
+<body>
+<header> Welcome To USER DATABASE VIEWER
+</header>
+<section>
+<h4> Add NEW USER:</h4>
+<form method="POST" action="servingRequest">
+           
+<table width="1260" border="1">
+<thead>
+   <tr>
+      <th style="font-size:15px"  colspan="2">Enter Information Here</th>
+   </tr>
+</thead>
+<tbody>
+   <tr>
+       <td>First Name</td>
+       <td><input type="text" name="firstName" value="" /></td>
+   </tr>
+   <tr>
+       <td>Last Name</td>
+       <td><input type="text" name="lastName" value="" /></td>                
+   </tr>
+   <tr>
+       <td>Customer Id</td>
+       <td><input type="text" name="empId" value="" /></td>
+   </tr>
+   <tr>
+       <td><input type="submit" value="ADD USER" /></td>
+   </tr>
+                   
+</tbody>
+</table>
+          
+</form>
+</section>
+ <br>  
+<div>
+ <iframe src="viewAllUserData.jsp" width="1260" height="1000" scrolling="true"></iframe>
+</div>            
+</body>
+</html>
